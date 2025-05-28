@@ -53,12 +53,38 @@
     .referencias a:hover {
       text-decoration: underline;
     }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-top: 1em;
+      padding-left: 1em;
+      border-left: 2px dashed #b89d79;
+    }
+    .timeline div {
+      position: relative;
+      padding-left: 1em;
+    }
+    .timeline div::before {
+      content: '◉';
+      position: absolute;
+      left: -1em;
+      color: #5e4322;
+    }
+    img.icono {
+      height: 60px;
+      margin: 10px 0;
+    }
+    .center {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Nylon: La fibra que revolucionó</h1>
     <p><em>“De la seda sintética al símbolo del progreso moderno”</em></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Polyamide_66.svg/320px-Polyamide_66.svg.png" alt="Estructura del Nylon 6,6" class="icono" />
   </header>
   <main>
     <section>
@@ -102,15 +128,32 @@
         <li>Estrategia: Marketing emocional (comodidad, elegancia).</li>
         <li>Durante la guerra: Publicidad patriótica “Nylon ayuda a ganar la guerra”.</li>
       </ul>
+      <div class="center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Nylon_stockings_advertisement_1940s.jpg/320px-Nylon_stockings_advertisement_1940s.jpg" alt="Publicidad vintage nylon" class="icono" />
+      </div>
     </section>
 
     <section>
-      <h2>5. Uso por Sector</h2>
-      <p>[Gráfico: Aquí se puede insertar una imagen o gráfico de pastel con los porcentajes de uso por sector]</p>
+      <h2>5. Línea de Tiempo</h2>
+      <div class="timeline">
+        <div><strong>1935:</strong> Síntesis del nylon por Wallace H. Carothers.</div>
+        <div><strong>1938:</strong> Presentación pública en la Feria Mundial.</div>
+        <div><strong>1939:</strong> Comercialización de medias de nylon.</div>
+        <div><strong>1940s:</strong> Uso militar en paracaídas y cuerdas.</div>
+        <div><strong>1950s:</strong> Masificación textil en ropa femenina.</div>
+        <div><strong>Actualidad:</strong> Producción global para múltiples industrias.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>6. Uso por Sector</h2>
+      <p class="center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Nylon_Applications_Pie_Chart.png/400px-Nylon_Applications_Pie_Chart.png" alt="Usos del nylon por sector" class="icono">
+      </p>
     </section>
 
     <section class="referencias">
-      <h2>6. Referencias Bibliográficas</h2>
+      <h2>7. Referencias Bibliográficas</h2>
       <ul>
         <li><a href="https://www.acs.org/education/whatischemistry/landmarks/nylon.html" target="_blank">American Chemical Society</a></li>
         <li>Buderi, R. (1996). *The invention that changed the world*. Simon & Schuster.</li>
@@ -127,3 +170,4 @@
   </footer>
 </body>
 </html>
+
